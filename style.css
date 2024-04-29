@@ -1,8 +1,104 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
 #navbar {
+  position: fixed;
+  height: auto;
   /* border: 1px solid red; */
+  width: 100%;
+}
+
+.main-body-navbar {
   display: flex;
   justify-content: space-between;
   height: auto;
+  padding: 5px;
 }
 
 #navbar img {
@@ -13,6 +109,11 @@
   display: flex;
   /* border: 1px solid green; */
   align-items: center;
+  cursor: pointer;
+}
+
+.navbar-menu span:hover {
+  color: rgb(225, 192, 125);
 }
 
 .navbar-menu span {
@@ -23,4 +124,59 @@
   font-style: normal;
   font-weight: 700;
   color: rgb(82, 81, 81);
+}
+
+.navbar-menu-mobile {
+  display: none;
+}
+
+.body-navbar-menu-mobile {
+  display: none;
+}
+
+/* css mobile */
+@media only screen and (max-width: 768px) {
+  #navbar {
+    padding: 0;
+  }
+  .navbar-menu {
+    display: none;
+  }
+
+  .navbar-menu-mobile {
+    display: block;
+    margin-right: 10px;
+    margin-top: 8px;
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+  }
+
+  .navbar-menu-mobile div {
+    border-top: 2px solid black;
+    margin-bottom: 5px;
+    margin-top: 3px;
+    padding: 1px;
+    box-sizing: border-box;
+  }
+
+  .body-navbar-menu-mobile {
+    display: none;
+    background-color: gray;
+    font-size: 12px;
+    box-sizing: border-box;
+    font-style: normal;
+    font-weight: 700;
+    color: black;
+  }
+
+  .body-navbar-menu-mobile div {
+    padding: 10px;
+    cursor: pointer;
+    width: max-content;
+  }
+
+  .body-navbar-menu-mobile div:hover {
+    color: rgb(225, 192, 125);
+  }
 }
