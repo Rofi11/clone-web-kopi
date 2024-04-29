@@ -5,18 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kopi Item</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="./dicoding.js"></script>
   </head>
   <body>
     <header>
       <nav id="navbar">
-        <img src="/images/new-logo-kopitem.jpg" alt="logo kopi" />
-        <div class="navbar-menu">
-          <span>TENTANG KOPIITEM</span>
-          <span>TENTANG KOPI</span>
-          <span>TENTANG KONTAK</span>
+        <div class="main-body-navbar">
+          <img src="/images/new-logo-kopitem.jpg" alt="logo kopi" />
+          <div class="navbar-menu">
+            <span>TENTANG KOPIITEM</span>
+            <span>TENTANG KOPI</span>
+            <span>TENTANG KONTAK</span>
+          </div>
+          <!--box for in mobile -->
+          <div class="navbar-menu-mobile" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div>
+          <div class="body-navbar-menu-mobile">
+            <div>TENTANG KOPIITEM</div>
+            <div>TENTANG KOPI</div>
+            <div>TENTANG KONTAK</div>
+          </div>
         </div>
       </nav>
     </header>
-    <main>test</main>
+    <main>
+      <!-- body menu for mobile -->
+    </main>
   </body>
 </html>
