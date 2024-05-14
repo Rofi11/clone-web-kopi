@@ -1,0 +1,222 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  /* padding: 40px; */
+}
+
+/* css main body for dekstop */
+#content {
+  position: relative;
+  top: 90px;
+  /* border: 1px solid green; */
+  padding: 30px 40px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.left-content article .page-title {
+  font-size: 30px;
+  font-weight: 900;
+  font-family: "Roboto", sans-serif;
+}
+
+.left-content article p {
+  color: rgb(58, 79, 102);
+  font-size: 16px;
+  text-align: start;
+  margin-top: 20px;
+  margin-right: 20px;
+  line-height: 26.4px;
+}
+
+.left-content-produk article {
+  /* border: 1px solid red; */
+  margin-right: 15px;
+  margin-top: 20px;
+}
+
+.left-content-produk article img {
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+  aspect-ratio: 1/1;
+  padding: 15px 15px 0px 15px;
+  box-sizing: border-box;
+  /* border: 1px solid blue; */
+}
+
+.left-content-produk h2 {
+  color: rgb(25, 42, 61);
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+/* untuk bagian aside nya */
+.right-content {
+  /* border: 1px solid black; */
+  width: 800px;
+  height: auto;
+  position: sticky;
+}
+
+.right-content aside h3 {
+  font-weight: 900;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.aside-produk li {
+  display: flex;
+  /* border: 1px solid red; */
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.aside-produk img {
+  width: 100px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.aside-produk-data {
+  color: rgb(58, 79, 102);
+  font-weight: 500;
+  box-sizing: border-box;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aside-produk-data p:first-child {
+  /* border: 1px solid blue; */
+  font-size: 15px;
+  width: 200px;
+}
+
+.aside-produk-data p:nth-child(2) {
+  font-size: 12px;
+}
+
+footer {
+  /* border: 1px solid red; */
+  background-color: rgb(248, 249, 251);
+  width: 100%;
+  height: 270px;
+  box-sizing: border-box;
+}
+
+footer div {
+  margin-top: 100px;
+  /* border: 1px solid blue; */
+  display: flex;
+  box-sizing: border-box;
+  align-items: end;
+  width: 100%;
+  height: 100%;
+  padding-left: 100px;
+  padding-bottom: 40px;
+  color: rgb(58, 79, 102);
+  font-size: 15px;
+}
+
+/* css mobile */
+@media only screen and (max-width: 900px) {
+  .right-content {
+    display: none;
+  }
+
+  /* footer */
+  footer div {
+    padding-left: 30px;
+  }
+}

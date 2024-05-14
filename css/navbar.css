@@ -87,11 +87,21 @@ video {
   vertical-align: baseline;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  /* padding: 40px; */
+}
+
 #navbar {
   position: fixed;
-  height: auto;
+  padding-top: 20px;
+  height: 80px;
   /* border: 1px solid red; */
   width: 100%;
+  z-index: 99;
+  background-color: white;
+  /* padding-left: 40px; */
+  /* padding-right: 40px; */
 }
 
 .main-body-navbar {
@@ -103,6 +113,7 @@ video {
 
 #navbar img {
   width: 115px;
+  margin-left: 40px;
 }
 
 .navbar-menu {
@@ -115,6 +126,18 @@ video {
 .navbar-menu span:hover {
   color: rgb(225, 192, 125);
 }
+
+.navbar-menu span a {
+  color: rgb(82, 81, 81);
+}
+
+.navbar-menu span a:active {
+  color: rgb(225, 192, 125);
+}
+
+/* .navbar-menu span a:visited {
+  color: rgb(225, 192, 125);
+}  */
 
 .navbar-menu span {
   margin-right: 18px;
@@ -135,10 +158,7 @@ video {
 }
 
 /* css mobile */
-@media only screen and (max-width: 768px) {
-  #navbar {
-    padding: 0;
-  }
+@media only screen and (max-width: 900px) {
   .navbar-menu {
     display: none;
   }
@@ -178,5 +198,9 @@ video {
 
   .body-navbar-menu-mobile div:hover {
     color: rgb(225, 192, 125);
+  }
+
+  .right-content {
+    display: none;
   }
 }
