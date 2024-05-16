@@ -123,7 +123,7 @@ body {
   cursor: pointer;
 }
 
-.navbar-menu span:hover {
+.navbar-menu span a:hover {
   color: rgb(225, 192, 125);
 }
 
@@ -131,14 +131,13 @@ body {
   color: rgb(82, 81, 81);
 }
 
-.navbar-menu span a:active {
-  color: rgb(225, 192, 125);
+.body-navbar-menu-mobile div a {
+  color: black;
 }
 
-/* .navbar-menu span a:visited {
+.body-navbar-menu-mobile div a:hover {
   color: rgb(225, 192, 125);
-}  */
-
+}
 .navbar-menu span {
   margin-right: 18px;
   /* border: 1px solid blue; */
